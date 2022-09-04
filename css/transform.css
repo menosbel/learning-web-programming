@@ -1,0 +1,23 @@
+.caja {
+    background: #ff115a;
+    width: 200px;
+    height: 200px;
+    transform: translate(200px) scale(1.5, 1.5) rotate(10deg);
+}
+
+/*
+No sirve para posicionar sino para hacer cosas con animaciones
+- trasladar
+transform: translate(200px, 50px);
+transform: translateX(200px)
+transform: translateY(200px)
+
+- escalar
+transform: scale(1,1);
+
+- rotar
+transform: rotate(20deg);
+
+- sesgar
+transform: skew(20deg, 0deg);
+ */

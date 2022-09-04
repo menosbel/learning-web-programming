@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Clearfix</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .caja {
+            width: 100px;
+            height: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="bg-primary text-white p-4 mb-4">Elemento de tipo bloque</div>
+                <span class="bg-success text-white d-inline-block p-4 mb-4">Elemento de tipo linea (convertido a inline block)</span>
+                <span class="bg-success text-white d-inline-block p-4 mb-4">Elemento de tipo linea (convertido a inline block)</span>
+                <div class="bg-primary text-white p-4 mb-4 d-inline-block">Elemento de tipo bloque (convertido a inline block)</div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="bg-primary clearfix">
+                    <div class="caja float-left"></div>
+                    <div class="caja float-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

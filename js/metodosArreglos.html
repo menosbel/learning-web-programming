@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metodos para arreglos</title>
+</head>
+<body>
+<script>
+    var amigos = ['Carlos', 'Alejandro', 'Cesar', 'Manuel'];
+
+    // LENGTH
+    document.write(amigos.length);
+
+    // JOIN
+    document.write(amigos.join('-'));
+
+    // POP y PUSH
+    //elimina
+    amigos.pop();
+    console.log(amigos);
+
+    //agrega
+    amigos.push('Felipe');
+    console.log(amigos);
+
+    // SHIFT y UNSHIFT
+    amigos.shift();
+    console.log(amigos);
+
+    amigos.unshift('Oscar');
+
+    // CONCAT
+    //une
+    var amigos2 = ['Juan', 'Pedro'];
+    var todosMisAmigos = amigos.concat(amigos2);
+    console.log(todosMisAmigos);
+
+    // SORT y REVERSE
+    //ordena alfabeticamente. no permite ordenar un arreglo de numeros
+    amigos.sort();
+    //invierte el orden que tenia
+    amigos.reverse()
+
+
+</script>
+
+</body>
+</html>

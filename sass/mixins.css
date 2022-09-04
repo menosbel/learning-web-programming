@@ -1,0 +1,12 @@
+article {
+  background: rgba(255, 128, 0, 0.5); }
+
+.boton, .btn-rojo {
+  background: none;
+  display: inline-block;
+  padding: 15px 20px; }
+
+.btn-rojo {
+  background: #ff2732; }
+
+/*# sourceMappingURL=mixins.css.map */

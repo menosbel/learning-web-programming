@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ /*   var carlos = {
+        nombre: 'Carlos Arturo',
+        edad: 20,
+        pais: 'Mexico',
+        bio: function () {
+            return this.nombre + ' tiene ' + this.edad + ' años.';
+        }
+    };
+
+    var juan = {
+        nombre: 'Juan',
+        edad: 17,
+        pais: 'Chile'
+    };
+
+    document.write(carlos.bio()); //metodo
+    document.write(carlos.edad); //propiedad
+
+  */
+
+ function persona(nombre, edad, pais){
+     this.nombre = nombre;
+     this.edad = edad;
+     this.pais = pais;
+ }
+
+ var padre = new persona('Juan', 56, 'Alemania');
+ document.write(papa.edad);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/*
+Defecto navegador web 16px.
+em - relativa al tama;o de fuente que tenga su elemento padre o el mas cercano
+rem - relativa al tama;o de fuente especificado en el body
+% - porcentaje
+px - pixel
+ */
+body {
+    font-size: 15px;
+}
+
+p {
+    font-size: 1em;
+}
+
+div {
+    width: 10em;
+    height: 10em;
+    background: black;
+}
+
+/*
+- 17 palabras clave
+- RGB decimal rgb(215,38,61);
+- RGB hexadeciman #328BF0
+- RGB porcentual rgb(84%, 15%, 24%)
+- Para dar transparencia, agrego un ultimo numero del 0 al 1. rgba (215,38,61, .5)
+ */

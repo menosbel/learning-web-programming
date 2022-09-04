@@ -1,0 +1,10 @@
+/* selector de hijos directos */
+div > p {
+    font-size:20px;
+}
+
+/* selector de atributos */
+input[type]{}
+
+/* selector de atributos y valor */
+input[type="text"]{}

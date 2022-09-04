@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Responsive Utilities</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <style>
+        .columna {
+            background: #2191fb;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col columna d-block d-sm-none">XS - EXTRA SMALL .d-sm-none No se muestra de sm en adelante. </div>
+            <div class="col columna d-none d-sm-block d-md-none">SM - SMALL .d-sm-block Se muestra de sm en adelante. d-md-none no se muestra de md en adelante</div>
+            <div class="col columna d-none d-md-block d-lg-none">MD - MEDIUM</div>
+            <div class="col columna d-none d-lg-block d-xl-none">LG - LARGE</div>
+            <div class="col columna d-none d-xl-block">XL - EXTRA LARGE</div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

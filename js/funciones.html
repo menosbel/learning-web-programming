@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones</title>
+</head>
+<body>
+<script>
+
+    function suma(numero1, numero2){
+        return numero1 + numero2;
+    }
+    var resultado = suma(7, 4);
+    document.write(resultado + '<br>');
+
+
+    var resta = function(numero3, numero4){
+        return numero3 - numero4;
+    };
+    document.write(resta(10, 5));
+
+// FUNCION AUTOINVOCADA para proteger nuestras variablees
+    (function(){
+        alert('Hola Mundo');
+    }());
+
+
+</script>
+</body>
+</html>

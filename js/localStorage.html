@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Storage</title>
+</head>
+<body>
+<script>
+    console.log(typeof(Storage));
+
+    if(typeof (Storage) !== "undefined") {
+        localStorage.setItem('nombre', 'Belen');
+        //igual a la lina anterior localStorage.nombre = 'Belen';
+        document.write('Si soporta')
+
+    } else {
+        document.write('Tu navegador no soporta Local Sotrage');
+    }
+
+    //accedo desde la compu del usuario
+    document.write(localStorage.nombre);
+
+    //para borrar
+    localStorage.removeItem('nombre');
+
+    //Session Storage. la info se borra si el usuario cierra el navegador
+    sessionStorage.nombre = 'Belen';
+</script>
+</body>
+</html>

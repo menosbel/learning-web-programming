@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Formularios-grid</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="container">
+        <div class="row m-3">
+            <div class="col">
+                <form action="">
+                    <div class="form-group row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" placeholder="Password" name="password" id="password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+                        </div>
+                        <div class="col-12 col-md-3 mb-3">
+                            <label for="pais">Pais</label>
+                            <select name="pais" id="pais" class="form-control">
+                                <option value="argentina">Argentina</option>
+                                <option value="chile">Chile</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="bolivia">Bolivia</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-3 mb-3">
+                            <label>Sexo</label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Hombre
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="sexo" id="mujer" class="form-check-input mr-2">Mujer
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="terminos" id="terminos" class="form-check-input mr-2">Acepto los terminos
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary mb-3" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

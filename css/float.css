@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: Arial;
+}
+
+.cajaPadre {
+    background: darkviolet;
+    width: 700px;
+    overflow: hidden;
+}
+
+.caja {
+    width: 200px;
+    color: white;
+    font-size: 38px;
+    background: #4281ed;
+    height: 200px;
+    margin: 20px;
+}
+
+.uno {
+    float: left;
+}
+
+.dos {
+    float: right;
+}
+
+/*.clear {
+    clear: both;
+}
+
+ */

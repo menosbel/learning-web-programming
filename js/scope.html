@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope</title>
+</head>
+<body>
+<script>
+
+    // ------ Variable local. dentro de una funcion
+    function salud(){
+        var texto = 'Hola Mundo';
+        //no puedo acceder a esa variable por fuera de esta funcion
+        console.log(texto);
+    }
+    saludo()
+
+    // ------ Variable local con funciones anidadas.
+    // busca variables desde adentro de la funcion hacia afuera, pero no hacia adentro
+    function saludo2(){
+        var texto = 'Hola Mundo';
+
+        function mensaje(){
+            console.log(texto);
+        }
+        mensaje()
+    }
+    saludo2()
+
+    // ------ Variable global
+    // pueden ser accedidas desde cualquier parte del codigo
+    var texto = 'Hola Mundo';
+
+    function saludo3(){
+        console.log(texto);
+
+        texto = 'Hola Mundo modificado';
+        console.log(texto);
+    }
+
+    saludo();
+
+    // ------ IMPORTANTE -------
+    function saludo4(){
+        // no le pondo el var entonces es global
+        mensaje = 'Hola Mundo';
+    }
+    saludo4();
+    console.log(mensaje);
+
+    // como defender nuestras variables de codigo de terceros
+    // poner todo el codigo para que el de terceros no pueda acceder
+    (function(){
+        var mensaje = 'Hola Mundo';
+    }())
+
+</script>
+</body>
+</html>

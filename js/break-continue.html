@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentencias break y continue</title>
+</head>
+<body>
+<script>
+
+    var amigos = ['Juan', 'Cesar', 'Luis', 'Alejandro', 'Manuel'];
+
+    for (amigo in amigos) {
+        if(amigos[amigo] == 'Alejandro'){
+            continue;
+        }
+
+        document.write(amigos[amigo]);
+        document.write('<br>');
+
+        /*
+        if(amigos[amigo] == 'Cesar') {
+            break;
+        }
+
+         */
+    }
+
+</script>
+</body>
+</html>

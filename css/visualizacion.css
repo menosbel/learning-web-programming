@@ -1,0 +1,62 @@
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+div, a {
+    background: #ccc;
+}
+
+a {
+    background: blue;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.caja {
+    color: #fff;
+    background: #4fb560;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.contenedor {
+    width: 600px;
+    background: #ccc;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.contenedor2 .caja {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.azul {
+    background: #246eb9;
+    z-index: 10;
+}
+
+.gris {
+    background: grey;
+    left: 50px;
+    bottom: 80px;
+    z-index: 9;
+}
+
+.izquierda {float: left;}
+.derecha {float: right;}
+
+/*
+visibility: hidden -oculta y guarda el lugar
+display: none -no le guarda el lugar
+overflow: hidden -oculta el texto que sobrepasa la caja
+overflow: auto -agrega un scroll
+
+DISPLAY [inline | block | none |inline-block | flex]
+
+*/

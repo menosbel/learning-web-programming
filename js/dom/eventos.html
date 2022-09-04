@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .caja {
+            width: 200px;
+            height: 200px;
+            cursor: ponter;
+            background: #226fc1;
+            display: inline-block;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            font-family: Arial, sans-serif, Helvetica;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<!-- <button id="btn-saludar">Saludo</button> -->
+<button id="btn-caja">Crear caja</button>
+<section id="contenedor"></section>
+
+<script>
+
+    function crearCaja(){
+        var contenedor = document.getElementById('contenedor');
+        var caja = document.createElement('div');
+        caja.className = 'caja';
+        contenedor.appendChild(caja);
+    }
+
+    var btnCaja = document.getElementById('btn-caja');
+    btnCaja.addEventListener('click', crearCaja);
+/*
+    function saludo(){
+        alert('Hola');
+    }
+
+    var btnSaludar = document.getElementById('btn-saludar');
+    btnSaludar.addEventListener('click', saludo);
+    btnSaludar.addEventListener('mouseenter', saludo);
+    btnSaludar.addEventListener('click', function());
+
+    btnSaludar.removeEventListener('click', saludo);
+
+ */
+
+</script>
+
+</body>
+</html>

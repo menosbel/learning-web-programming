@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Métodos cadenas</title>
+</head>
+<body>
+<script>
+    var nombre = 'Belen Mabel';
+    var numeroCaracteres = nombre.length;
+    console.log(nombre + ' tiene ' + numeroCaracteres + ' caracteres.');
+
+    // desde donde y hasta donde
+    var segundoNombre = nombre.substring(6, 11);
+    console.log(segundoNombre);
+
+    // desde donde y cuantos caracteres
+    var segundoNombreDos = nombre.substr(7, 2);
+    console.log(segundoNombreDos);
+
+    var nuevoNombre = nombre.replace('Mabel', 'Maria');
+    console.log(nuevoNombre);
+
+    nombreMayus = nombre.toUpperCase();
+    console.log(nombreMayus);
+
+    // primera ocurrencia de una letra en una cadena de texto
+
+    var posicionPrimera = nombre.indexOf('e');
+    console.log(posicionPrimera);
+
+    var posicionFinal = nombre.lastIndexOf('e');
+    console.log(posicionFinal);
+
+</script>
+</body>
+</html>
